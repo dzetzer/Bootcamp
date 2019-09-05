@@ -17,6 +17,7 @@ namespace GuessingGame
 
                 if (numGuessed == 7) gameWon = true;
                 else if (numGuessed == 0) Console.WriteLine("Remember to enter a number between 1 and 10");
+                else if (numGuessed == -1) Environment.Exit(1);
                 else Console.WriteLine("You Lost!");
 
                 if(gameWon == true) Console.WriteLine("You Won!");
